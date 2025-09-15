@@ -1,0 +1,7 @@
+# Register service
+curl -X POST http://localhost:4000/register \
+  -H "Content-Type: application/json" \
+  -d '{"name":"service-a","url":"http://localhost:8081"}'
+
+# Discover service
+curl http://localhost:4000/discover/service-a
